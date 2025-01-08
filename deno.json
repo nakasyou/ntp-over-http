@@ -1,0 +1,21 @@
+{
+  "name": "@ns/ntp-over-http",
+  "version": "0.1.0",
+  "exports": {
+    "./server": "./server/app.ts",
+    "./client": "./client/mod.ts"
+  },
+  "license": "MIT",
+  "tasks": {
+    "dev:server": "deno serve -N --watch scripts/server-demo.ts",
+    "dev:client": "deno serve -N --watch scripts/client-demo.ts"
+  },
+  "imports": {
+    "hono": "npm:hono@^4.6.16",
+    "ntp-time": "npm:ntp-time@^2.0.6"
+  },
+  "fmt": {
+    "semiColons": false,
+    "singleQuote": true
+  }
+}
